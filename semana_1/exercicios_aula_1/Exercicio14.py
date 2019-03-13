@@ -1,5 +1,8 @@
-lista = input('Digite números e os separe com vírgula: ')
-lista.split(',')
+lista = [1,2,3,4]
 
-for item in lista:
-    print(lista[item] + item)
+resultado = []
+
+for index, numero in enumerate(lista):
+    resultado.append(sum(lista[:index+1]))
+
+print(resultado)

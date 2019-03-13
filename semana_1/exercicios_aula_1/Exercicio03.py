@@ -8,7 +8,13 @@ tinta a serem compradas e o preço total.
 
 from math import ceil
 
-tamanho = float(input('Digite o tamanho em metros quadrados: '))
-litrosNecessarios = ceil(tamanho/3/18)
+metros = input('Digite o tamanho em metros quadrados: ')
+litros = int(metros)/3
 
-print("Quantidade {}, Preço: {}".format(litrosNecessarios,litrosNecessarios*80))
+capacidade = 18
+preco = 80
+
+latas = litros/capacidade
+precofinal = preco * latas
+
+print("Quantidade {}, Preço: {}".format(ceil(latas), ceil(precofinal)))
