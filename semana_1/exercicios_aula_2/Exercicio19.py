@@ -1,14 +1,10 @@
-'''
 lista = ['keep','remove','keep','remove','keep','remove']
 n_lista = []
 
-for item in lista:
-    if item == 'remove':
-        n_lista = filter(lista.remove('remove'),lista)
+def remover(lista):
+	remover = ['remove']
+	
+	return False if lista in remover else True
 
+n_lista = filter(remover, lista)
 print(list(n_lista))
-'''
-
-lista = ['keep','remove','keep','remove','keep','remove']
-n_lista = []
-
