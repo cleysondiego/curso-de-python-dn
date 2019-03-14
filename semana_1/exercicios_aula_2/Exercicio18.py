@@ -8,3 +8,17 @@ f(5) -> ‘goiabada’
 f(15) -> ‘romeu e julieta’
 f(19) -> 19
 '''
+
+def Union(id):
+    if ((id % 5) == 0) and ((id % 3) == 0):
+        return 'Romeu e Julieta'
+    elif (id % 5) == 0:
+        return 'Goiabada'
+    elif (id % 3) == 0:
+        return 'queijo'
+    else:
+        return id
+
+id = int(input('Digite um número: '))
+
+print(Union(id))
