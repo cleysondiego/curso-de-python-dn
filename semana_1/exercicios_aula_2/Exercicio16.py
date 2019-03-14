@@ -6,3 +6,13 @@ aplica_em_lote(soma_1, 3) -> [1, 2, 3, 4]
 DICA:
     O index inicia em 0
 '''
+def soma_1(valor):
+    return valor+1
+
+def aplica_em_lote(funcao, numero):
+    lista = []
+    for n in range(numero):
+        lista.append(funcao(n))
+    return lista
+
+print(aplica_em_lote(soma_1, 5))
