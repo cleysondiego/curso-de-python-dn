@@ -10,3 +10,6 @@ class Calc:
 
     def div(self, x, y):
         return x + y
+
+    def exp(x, y, z):
+        return sub(soma(x,y), z)
