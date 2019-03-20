@@ -1,5 +1,5 @@
 class Calc:
-    def add(self, x, y):
+    def soma(self, x, y):
         return x + y
     
     def sub(self, x, y):
@@ -10,6 +10,3 @@ class Calc:
 
     def div(self, x, y):
         return x + y
-
-    def exp(x, y, z):
-        return sub(soma(x,y), z)
