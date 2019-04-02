@@ -1,16 +1,10 @@
 '''
 Dada uma função de soma:
-
+Faça assertivas de valores que você acredita serem coerentes com a função
 '''
-
 
 def soma(x, y):
     return x + y
-
-
-'''
-Faça assertivas de valores que você acredita serem coerentes com a função
-'''
 
 assert soma(1, 1) == 2
 assert soma(-1, 2) == 1

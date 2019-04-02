@@ -1,4 +1,4 @@
-numero = int(input('Digit um numero: '))
+numero = int(input('Digite um numero: '))
 string = input('Digite uma string: ')
 
 def verifica(numero, string):

@@ -21,11 +21,10 @@ class TestExp(TestCase):
 
         mocked_soma.assert_called_with(x, y)
 
-        #self.assertEqual(exp(1,2,3), 0)
-    
+
     def test_exp_input_indireto_de_sub_deve_receber_4_z(self):
         x, y, z = 1, 2, 3
         with mock.patch('Exercicio11.sub') as mocked_sub:
             exp(x, y, z)
-        
+
         mocked_sub.assert_called_with(3, z)
