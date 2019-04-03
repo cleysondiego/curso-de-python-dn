@@ -1,4 +1,4 @@
-arquivo = open('exercicio05.txt', 'w')
+arquivo = open('Exercicio05.txt', 'w')
 
 
 def tab1(x):
@@ -7,4 +7,3 @@ def tab1(x):
 
 for item in range(1, 11):
     arquivo.writelines(tab1(item))
-

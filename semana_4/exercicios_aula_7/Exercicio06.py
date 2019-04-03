@@ -1,4 +1,4 @@
-arquivo = open('exercicio05.txt', 'r')
+arquivo = open('Exercicio05.txt', 'r')
 
 lista = []
 
