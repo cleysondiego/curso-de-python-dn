@@ -1,12 +1,12 @@
 class ContaDeInvestimentos:
-    def __init__(self, numero_da_conta: int, nome: str, saldo = 0, taxaJuros: float):
+    def __init__(self, numero_da_conta: int, nome: str, taxaJuros: float, saldo = 0):
         self.numero_da_conta = numero_da_conta
         self.nome = nome
         self.saldo = saldo
         self.taxaJuros = taxaJuros
 
     def adicionarJuros(self):
-        self.taxaJuros = 10
+        self.saldo = (self.saldo * (self.taxaJuros/100)) + self.saldo
 
     def alterarNome(self, novo_nome):
         self.nome = novo_nome
@@ -22,9 +22,7 @@ class ContaDeInvestimentos:
             print('Você não possui saldo suficiente')
 
 if __name__ == '__main__':
-    conta_cleyson = ContaCorrente(1321, 'Cleyson')
+    conta_cleyson = ContaDeInvestimentos(1321, 'Cleyson', 10, 1000)
     print(conta_cleyson.saldo)
-    conta_cleyson.deposito(300)
-    print(conta_cleyson.saldo)
-    conta_cleyson.saque(150)
+    conta_cleyson.adicionarJuros()
     print(conta_cleyson.saldo)
